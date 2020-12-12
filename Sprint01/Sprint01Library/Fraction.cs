@@ -15,7 +15,6 @@ namespace Sprint01Library
                 denominator *= -1;
             }
 
-
             for (int mod = numerator < denominator ? Math.Abs(numerator) : denominator; mod > 1; mod--)
             {
                 if (numerator % mod == 0 && denominator % mod == 0)
