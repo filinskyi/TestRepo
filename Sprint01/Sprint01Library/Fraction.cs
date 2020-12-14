@@ -9,12 +9,7 @@ namespace Sprint01Library
 
         public Fraction(int numerator, int denominator)
         {
-            if ((numerator < 0 && denominator < 0) || (numerator > 0 && denominator < 0))
-            {
-                numerator *= -1;
-                denominator *= -1;
-            }
-
+          
             for (int mod = numerator < denominator ? Math.Abs(numerator) : denominator; mod > 1; mod--)
             {
                 if (numerator % mod == 0 && denominator % mod == 0)
@@ -24,6 +19,7 @@ namespace Sprint01Library
                     break;
                 }
             }
+            // TODO do some worke
 
             this.numerator = numerator;
             this.denominator = denominator;
